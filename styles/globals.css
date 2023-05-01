@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #F5F5F5;
+}
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+.accordion li > div {
+  display: none;
+}
+
+.accordion .flipY {
+  transform: rotate3d(1, 0, 0, 180deg);
+}
+
+.accordion svg {
+  transition: all 1s cubic-bezier(0, .5, 0, 1);
+}
