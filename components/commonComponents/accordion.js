@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+import { AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
@@ -34,7 +36,9 @@ const Accordion = (props) => {
                             </div>
                             {(activeIndex === i) && (
                                 <div className="text-gray-500 text-md p-2">
+                                    {/* <AnimatePresence mode="wait"> */}
                                     {key.Description}
+                                    {/* </AnimatePresence>  */}
                                 </div>
                             )}
                         </div>
